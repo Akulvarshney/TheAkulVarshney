@@ -1,0 +1,50 @@
+.certs {
+    margin: 5rem 0;
+}
+
+#cert {
+    text-align: center;
+}
+
+.cert-image img {
+    width: 10%;
+    aspect-ratio: 1/1;
+    margin: auto;
+}
+
+.cert-item {
+    margin: 3px;
+    background: var(--color-secondary-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.cert-item h3 {
+    margin: 1rem 0;
+    font-family: 'Gideon Roman', cursive;
+    color: var(--color-primary);
+}
+
+.cert-item h5 {
+    margin: 1rem 0;
+}
+
+
+.cert-item a {
+    color: var(--color-light);
+    padding: 5px;
+    border: 1px solid;
+    border-color: var(--color-secondary);
+    background-color: var(--color-secondary);
+}
+
+.cert-item a:hover {
+    color: var(--color-secondary);
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid;
+    border-color: var(--color-light);
+    background-color: var(--color-light);
+}

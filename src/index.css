@@ -1,13 +1,96 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: 0;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-primary: #000000;
+  --color-secondary: #8c52ff;
+  --color-secondary-variant: #BC8CF2;
+  --color-white: #fff;
+  --color-light: #EEEEEE;
+
+  --transition: all 400ms ease;
+
+  --container-width-ls: 75%;
+  --container-width-md: 85%;
+  --container-width-sm: 95%;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Gideon Roman', cursive;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  background-image: url(./pictures/bg1.jpg);
+  background-size: cover;
+  line-height: 1.5;
+}
+
+.container {
+  width: var(--container-width-ls);
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 1rem;
+}
+
+a {
+  transition: var(--transition);
+  color: var(--color-secondary-variant);
+}
+
+.btn {
+  cursor: pointer;
+  width: max-content;
+  transform: var(--transition);
+  padding: 0.75rem 1.2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: 1px solid var(--color-secondary-variant);
+}
+
+.btn:hover {
+  background-color: var(--color-secondary-variant);
+  border-color: transparent;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+}
+
+
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Gideon Roman', cursive; */

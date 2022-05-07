@@ -1,0 +1,119 @@
+#contact {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.bg-text {
+    margin: auto;
+    font-size: 300px;
+    position: absolute;
+    left: 100px;
+    bottom: 1px;
+    z-index: -1;
+    text-shadow: 0 0 3px var(--color-secondary), 0 0 5px var(--color-secondary-variant);
+    color: black;
+    /* transform: rotate(270deg); */
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-option {
+    background-color: var(--color-primary);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 10px lightblue;
+    color: var(--color-secondary);
+    opacity: 0.8;
+}
+
+.contact-option:hover {
+    background-color: var(--color-primary);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 2px solid;
+
+    color: var(--color-secondary);
+}
+
+.contact-option a {
+    color: var(--color-light);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+input,
+textarea {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: var(--color-secondary-variant);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Gideon Roman', cursive;
+    font-weight: bolder;
+    color: var(--color-light);
+}
+
+button {
+    width: max-content;
+    padding: .5rem 1rem;
+    color: var(--color-light);
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .bg-text {
+        font-size: 185px;
+        left: 50px;
+        text-shadow: 0 0 3px var(--color-secondary), 0 0 5px var(--color-secondary-variant);
+        color: black;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .bg-text {
+        display: none;
+    }
+}
