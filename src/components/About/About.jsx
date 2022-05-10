@@ -14,6 +14,7 @@ const About = () => {
         <div className="about_image">
           <img src={ME} alt="" />
         </div>
+        <div className="blurright"></div>
         <div className="about-content">
           <div className="about-cards">
             <article className="about-card">
@@ -33,13 +34,12 @@ const About = () => {
             </article>
           </div>
           <p>
-            Hola! I'm Akul Varshney pursuing B.tech (Information Technology) at
-            Amity University, Noida (2019-2023). Ever since I was a little kid,
-            the computer has been my passion. I help people in need through
-            various NGO's. I Love to code, meet new challenges, have this
-            curiosity to learn every language and technology which is available.
-            This quality of being technophile remains with me. There's certainly
-            a lot to learn, solve and build. <br /> On a journey to SOLOPRENEUR!
+            Hola! I'm Akul Varshney pursuing B.Tech. in Information Technology
+            from Amity University, Noida (2019-2023). Ever since I was a little
+            kid, the computer has been my passion. I desire to meet new
+            challenges and have this intense curiosity to learn new technology.
+            This quality of being technophile remains with me. <br /> On a
+            journey to SOLOPRENEUR!
           </p>
         </div>
       </div>

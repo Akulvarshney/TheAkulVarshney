@@ -2,23 +2,26 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
-    margin: 5rem 0;
 }
-
 
 #project {
     text-align: center;
+    background: var(--color-primary);
+}
+
+#project h1 {
+    font-size: 50px;
+    font-family: 'Beau Rivage', cursive;
 }
 
 .project-image img {
-    width: 50%;
-    aspect-ratio: 8/3;
+    width: 20%;
+    aspect-ratio: 1/1;
     margin: auto;
 }
 
 .project-item {
-    background: var(--color-secondary-variant);
-    opacity: 0.8;
+    background: var(--color-light);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
@@ -27,8 +30,8 @@
 }
 
 .project-item:hover {
-    box-shadow: 0 0 10px 10px var(--color-light);
-    color: var(--color-light);
+    box-shadow: 0 0 10px 10px var(--color-secondary);
+    color: var(--color-secondary);
 
 }
 

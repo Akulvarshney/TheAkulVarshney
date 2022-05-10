@@ -1,4 +1,3 @@
-import React from "react";
 import "./nav.css";
 import { BiHomeHeart } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
@@ -14,35 +13,35 @@ const Navbar = () => {
     <>
       <nav>
         <a
-          href="link.html#"
+          href="#"
           onClick={() => setActiveNav("#")}
           className={activeNav === "#" ? "active" : ""}
         >
           <BiHomeHeart />
         </a>
         <a
-          href="link.html#about"
+          href="#about"
           onClick={() => setActiveNav("#about")}
           className={activeNav === "#about" ? "active" : ""}
         >
           <AiOutlineUser />
         </a>
         <a
-          href="link.html#project"
+          href="#project"
           onClick={() => setActiveNav("#project")}
           className={activeNav === "#project" ? "active" : ""}
-        >
-          <BiBookAlt />
-        </a>
-        <a
-          href="link.html#pub"
-          onClick={() => setActiveNav("#pub")}
-          className={activeNav === "#pub" ? "active" : ""}
         >
           <MdDesignServices />
         </a>
         <a
-          href="link.html#contact"
+          href="#pub"
+          onClick={() => setActiveNav("#pub")}
+          className={activeNav === "#pub" ? "active" : ""}
+        >
+          <BiBookAlt />
+        </a>
+        <a
+          href="#contact"
           onClick={() => setActiveNav("#contact")}
           className={activeNav === "#contact" ? "active" : ""}
         >

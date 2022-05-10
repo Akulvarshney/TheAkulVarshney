@@ -11,15 +11,17 @@ const Header = () => {
         <div className="container">
           <div className="intro">
             <h2>Hola! I'm</h2>
-            <h1>Akul Varshney</h1>
+            <h1>AKUL VARSHNEY</h1>
             <h2>Front-end Web Developer || Programmer</h2>
           </div>
+          <div className="blurleft"></div>
           <div>
             <Resume />
           </div>
           <div className="me">
             <img src={ME} alt="" />
           </div>
+          <div className="blurright"></div>
           <div>
             <Links />
           </div>

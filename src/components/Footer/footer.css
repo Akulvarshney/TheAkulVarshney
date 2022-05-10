@@ -16,7 +16,7 @@
 }
 
 .footer-links a:hover {
-    color: var(--color-light);
+    color: var(--color-secondary);
 }
 
 .footer-social-links {
@@ -28,6 +28,7 @@
 
 .footer-social-links a {
     font-size: xx-large;
+    color: var(--color-secondary);
 
 }
 

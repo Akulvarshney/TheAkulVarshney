@@ -5,12 +5,13 @@
 
 .bg-text {
     margin: auto;
-    font-size: 300px;
+    font-size: 250px;
     position: absolute;
     left: 100px;
     bottom: 1px;
     z-index: -1;
-    text-shadow: 0 0 3px var(--color-secondary), 0 0 5px var(--color-secondary-variant);
+    text-shadow: 0 0 3px var(--color-secondary), 0 0 5px var(--color-light);
+    font-family: 'Alfa Slab One', cursive;
     color: black;
     /* transform: rotate(270deg); */
 }
@@ -60,6 +61,8 @@ form {
 #contact h2 {
     text-align: center;
     margin: 2rem;
+    font-family: 'Amatic SC', cursive;
+    color: var(--color-light);
 }
 
 input,
@@ -67,10 +70,10 @@ textarea {
     width: 80%;
     margin: 10px auto;
     padding: 10px;
-    background-color: var(--color-secondary-variant);
+    background-color: var(--color-secondary);
     border: 2px solid transparent;
     border-radius: 10px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 input::placeholder,
@@ -91,10 +94,9 @@ button {
 
 @media screen and (max-width: 1024px) {
     .bg-text {
-        font-size: 185px;
+        font-size: 165px;
         left: 50px;
-        text-shadow: 0 0 3px var(--color-secondary), 0 0 5px var(--color-secondary-variant);
-        color: black;
+        top: 250px;
     }
 
     .contact-container {

@@ -17,7 +17,7 @@ const ProjectItem = ({ project }) => {
                 Github
               </a>
               <a href={val.website} rel="noopener noreferrer" target="_blank">
-                Live Website
+                View
               </a>
             </article>
           </>

@@ -18,6 +18,10 @@ const Contact = () => {
 
     e.target.reset();
   };
+
+  const alertMe = () => {
+    alert("Message has been sent!");
+  };
   return (
     <section id="contact" data-aos="fade-in">
       <h2>Get In Touch!</h2>
@@ -37,7 +41,7 @@ const Contact = () => {
             <h3>WhatsApp</h3>
             <h4>+91-880-025-2885</h4>
             <a
-              href="https://api.whatsapp.com/send?phone=9311861200"
+              href="https://api.whatsapp.com/send?phone=8800252885"
               target="_blank"
             >
               Send a Message!
@@ -58,7 +62,9 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit" onClick={alertMe}>
+            Submit
+          </button>
         </form>
       </div>
     </section>

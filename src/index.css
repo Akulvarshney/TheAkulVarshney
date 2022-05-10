@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Old+Standard+TT&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 
 
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none;
   outline: 0;
-
 }
 
 :root {
-  --color-primary: #000000;
-  --color-secondary: #8c52ff;
-  --color-secondary-variant: #BC8CF2;
-  --color-white: #fff;
-  --color-light: #EEEEEE;
+  --color-primary: black;
+  --color-secondary: #9615DB;
+  --color-light: #d3d3d3;
 
   --transition: all 400ms ease;
 
@@ -34,11 +32,11 @@ html {
 }
 
 body {
-  font-family: 'Gideon Roman', cursive;
+  font-family: 'Old Standard TT', serif;
   background-color: var(--color-primary);
   color: var(--color-white);
-  background-image: url(./pictures/bg1.jpg);
-  background-size: cover;
+  background-image: black;
+  opacity: .9;
   line-height: 1.5;
 }
 
@@ -53,7 +51,15 @@ section {
 
 a {
   transition: var(--transition);
-  color: var(--color-secondary-variant);
+  color: var(--color-light);
+}
+
+h1 {
+  color: var(--color-light);
+  font-weight: 300;
+  font-family: 'Alfa Slab One', cursive;
+  margin: 2rem auto;
+
 }
 
 .btn {
@@ -63,11 +69,11 @@ a {
   padding: 0.75rem 1.2rem;
   background-color: var(--color-secondary);
   color: var(--color-light);
-  border: 1px solid var(--color-secondary-variant);
+  border: 1px solid var(--color-light);
 }
 
 .btn:hover {
-  background-color: var(--color-secondary-variant);
+  background-color: var(--color-light);
   border-color: transparent;
 }
 
@@ -77,10 +83,34 @@ img {
   object-fit: cover;
 }
 
+.blurleft {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  z-index: -9;
+  filter: blur(120px);
+}
+
+.blurright {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  right: 13rem;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  z-index: -9;
+  filter: blur(120px);
+}
 
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
+  }
+
+  .blurright {
+    right: 14px;
   }
 }
 
@@ -88,9 +118,14 @@ img {
   .container {
     width: var(--container-width-sm);
   }
+
+  .blurright {
+    display: none;
+  }
 }
 
-
-
 /* font-family: 'Amatic SC', cursive;
-font-family: 'Gideon Roman', cursive; */
+font-family: 'Gideon Roman', cursive; 
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Old Standard TT', serif;
+font-family: 'Rubik Glitch', cursive;*/

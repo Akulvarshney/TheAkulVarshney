@@ -4,7 +4,10 @@
 
 #about h1 {
     text-align: center;
-    margin-bottom: 5rem;
+    margin: 5rem auto;
+    color: var(--color-light);
+    font-size: 50px;
+    font-family: 'Beau Rivage', cursive;
 }
 
 .about_container {
@@ -26,6 +29,7 @@
 
 .about_image img:hover {
     transform: rotate(0deg);
+    transition-timing-function: ease;
 }
 
 .about-cards {
@@ -43,14 +47,16 @@
 }
 
 .about-card:hover {
-    background-color: var(--color-secondary-variant);
+    background-color: var(--color-light);
     color: var(--color-primary);
 }
 
 p {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Old Standard TT', serif;
     text-align: justify;
+    line-height: 1.5;
     margin: 0 10px;
+    color: var(--color-light);
 }
 
 @media screen and (max-width: 1024px) {
@@ -72,6 +78,11 @@ p {
     .about_image img {
         width: 100%;
     }
+
+    .about_container .blurright {
+        top: 10px;
+        right: 250px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -84,5 +95,11 @@ p {
 
     .about_image img {
         width: 100%;
+    }
+
+    .about_container .blurright {
+        display: block;
+        top: 10px;
+        right: 70px;
     }
 }

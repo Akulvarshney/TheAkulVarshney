@@ -1,9 +1,15 @@
 .certs {
-    margin: 5rem 0;
+    margin: 3rem 0;
 }
 
 #cert {
     text-align: center;
+    opacity: 0.8;
+}
+
+#cert h1 {
+    font-size: 50px;
+    font-family: 'Beau Rivage', cursive;
 }
 
 .cert-image img {
@@ -13,8 +19,8 @@
 }
 
 .cert-item {
-    margin: 3px;
-    background: var(--color-secondary-variant);
+    margin: 5px 100px;
+    background-image: linear-gradient(to bottom right, var(--color-secondary), var(--color-light));
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
@@ -33,18 +39,18 @@
 
 
 .cert-item a {
-    color: var(--color-light);
-    padding: 5px;
-    border: 1px solid;
-    border-color: var(--color-secondary);
-    background-color: var(--color-secondary);
-}
-
-.cert-item a:hover {
-    color: var(--color-secondary);
-    margin: 10px;
+    color: var(--color-primary);
     padding: 5px;
     border: 1px solid;
     border-color: var(--color-light);
     background-color: var(--color-light);
+}
+
+.cert-item a:hover {
+    color: var(--color-light);
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid;
+    border-color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
