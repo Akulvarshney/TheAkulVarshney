@@ -44,7 +44,7 @@ const ProjectTabs = () => {
                 <Tab label="ReactJs" value="1" />
                 <Tab label="HTML/CSS" value="2" />
                 <Tab label="Python" value="3" />
-                <Tab label="AI/ML" value="4" />
+                <Tab label="MERN Stack" value="4" />
               </TabList>
             </Box>
             <TabPanel className="tabsss" value="1">

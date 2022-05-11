@@ -20,11 +20,7 @@ const Experience = () => {
           <div className="Others">
             <Link to="/marketing" className="right">
               <FaAngleDoubleRight />
-              <h2>
-                Marketing/
-                <br />
-                Graphic Des.
-              </h2>
+              <h2>Others</h2>
             </Link>
           </div>
         </div>
