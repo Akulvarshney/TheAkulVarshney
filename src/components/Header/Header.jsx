@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import Links from "./Links";
 import Resume from "./Resume";
-import ME from "../../pictures/me.jpg";
+import ME from "../../pictures/Akul.png";
 
 const Header = () => {
   return (

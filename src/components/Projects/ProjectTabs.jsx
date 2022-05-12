@@ -9,6 +9,16 @@ import Htmlapi from "./htmlapi";
 import ReactApi from "./reactapi";
 import PythonApi from "./pythonapi";
 import "./project.css";
+import { GrReactjs } from "react-icons/gr";
+import { FaNode } from "react-icons/fa";
+import {
+  SiCss3,
+  SiHtml5,
+  SiBootstrap,
+  SiPython,
+  SiMongodb,
+  SiExpress,
+} from "react-icons/si";
 
 const ProjectTabs = () => {
   const [html] = useState(Htmlapi);
@@ -22,7 +32,7 @@ const ProjectTabs = () => {
 
   return (
     <>
-      <section className="container" id="project" data-aos="fade-down">
+      <section className="container" id="project" data-aos="fade-up">
         <h1>Projects</h1>
         <Box sx={{ width: "100%", typography: "body1" }}>
           <TabContext value={value}>
@@ -48,21 +58,39 @@ const ProjectTabs = () => {
               </TabList>
             </Box>
             <TabPanel className="tabsss" value="1">
+              <div className="languages">
+                <GrReactjs />
+                <SiCss3 />
+              </div>
               <div className="projects">
                 <ProjectItem project={rea} />
               </div>
             </TabPanel>
             <TabPanel value="2">
+              <div className="languages">
+                <SiHtml5 />
+                <SiCss3 />
+                <SiBootstrap />
+              </div>
               <div className="projects">
                 <ProjectItem project={html} />
               </div>
             </TabPanel>
             <TabPanel value="3">
+              <div className="languages">
+                <SiPython />
+              </div>
               <div className="projects">
                 <ProjectItem project={pyt} />
               </div>
             </TabPanel>
             <TabPanel value="4">
+              <div className="languages">
+                <SiMongodb />
+                <SiExpress />
+                <GrReactjs />
+                <FaNode />
+              </div>
               <h1>Coming Soon!</h1>
             </TabPanel>
           </TabContext>

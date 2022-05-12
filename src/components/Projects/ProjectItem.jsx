@@ -12,7 +12,7 @@ const ProjectItem = ({ project }) => {
                 <img src={val.image} alt="" />
               </div>
               <h3>{val.title}</h3>
-
+              <p>{val.description}</p>
               <a href={val.github} rel="noopener noreferrer" target="_blank">
                 Github
               </a>

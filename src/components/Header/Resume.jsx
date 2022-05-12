@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../pictures/akul.pdf.pdf";
+import CV from "../../pictures/Akul-Resume.pdf";
 import "../Header/header.css";
 
 const Resume = () => {
