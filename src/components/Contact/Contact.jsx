@@ -32,7 +32,11 @@ const Contact = () => {
             <BiMailSend />
             <h3>Email</h3>
             <h4>allenv213@icloud.com</h4>
-            <a href="mailto:allenv213@icloud.com" target="_blank">
+            <a
+              href="mailto:allenv213@icloud.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send a Message!
             </a>
           </div>
@@ -43,6 +47,7 @@ const Contact = () => {
             <a
               href="https://api.whatsapp.com/send?phone=8800252885"
               target="_blank"
+              rel="noreferrer"
             >
               Send a Message!
             </a>

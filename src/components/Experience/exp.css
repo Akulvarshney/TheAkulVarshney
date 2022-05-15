@@ -18,29 +18,29 @@
 
 #experience .blurleft {
     height: 5rem;
-    /* opacity: 0.7; */
 
 }
 
-.left {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.left h2:hover {
-    color: var(--color-primary);
-    text-shadow: 0 0 40px var(--color-secondary), 0 0 5px var(--color-secondary);
-}
-
-.right {
+.tech {
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.right h2:hover {
+.tech h2:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 40px var(--color-secondary), 0 0 5px var(--color-secondary);
+}
+
+.Others {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Others h2:hover {
     color: var(--color-primary);
     text-shadow: 0 0 40px var(--color-secondary), 0 0 5px var(--color-secondary);
 }
@@ -99,7 +99,7 @@
 
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 600px) {
     .exp-item {
         margin: 2rem 15px;
     }

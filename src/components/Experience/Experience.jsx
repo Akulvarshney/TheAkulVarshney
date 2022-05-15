@@ -12,13 +12,13 @@ const Experience = () => {
         <div className="blurleft"></div>
         <div className="domains">
           <div className="tech" data-aos="fade-right">
-            <Link to="/technical" className="left">
+            <Link to="/technical">
               <FaAngleDoubleLeft />
               <h2>Technical</h2>
             </Link>
           </div>
-          <div className="Others" data-aos="fade-left">
-            <Link to="/marketing" className="right">
+          <div className="Others" data-aos="fade-right">
+            <Link to="/marketing">
               <FaAngleDoubleRight />
               <h2>Others</h2>
             </Link>
