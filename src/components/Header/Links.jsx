@@ -8,7 +8,7 @@ const Links = () => {
   return (
     <div className="links">
       <a
-        href="https://www.linkedin.com/in/akul-v-6a37bb110/"
+        href="https://www.linkedin.com/in/theakulvarshney/"
         target="_blank"
         rel="noopener noreferrer"
       >
