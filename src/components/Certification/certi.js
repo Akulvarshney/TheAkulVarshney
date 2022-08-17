@@ -14,6 +14,13 @@ const Certi = [
     url: "https://drive.google.com/file/d/1kqV7glECiJ7T8ghPb0QzYrQJK0adHGTc/view?usp=sharing",
   },
   {
+    id: 2.1,
+    name: "CCNAv7: Switching, Routing and Wireless Essentials",
+    company: "Cisco",
+    logo: require("../../pictures/cisco.png"),
+    url: "https://drive.google.com/file/d/1mNigQG69Ugym6G_SFCyJ5VGsPrLnWv5s/view?usp=sharing",
+  },
+  {
     id: 3,
     name: "C and C++",
     company: "Unschool",

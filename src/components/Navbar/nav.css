@@ -1,7 +1,3 @@
-nav a:hover {
-    color: var(--color-secondary);
-}
-
 nav {
     background-color: rgba(0, 0, 0, 0.3);
     width: max-content;
@@ -26,6 +22,11 @@ nav a {
     color: var(--color-light);
     font-size: 1.1rem;
 }
+
+nav a:hover {
+    color: var(--color-secondary);
+}
+
 
 nav a.active {
     background: var(--color-secondary);
