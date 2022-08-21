@@ -16,7 +16,8 @@ const TechnicalApi = [
         </li>
       </ul>
     ),
-    certificate: "#",
+    certificate:
+      "https://drive.google.com/file/d/1hJAZG7ajNHL6_QeJj1ugQZIEaxsQjDLT/view?usp=sharing",
   },
 ];
 
